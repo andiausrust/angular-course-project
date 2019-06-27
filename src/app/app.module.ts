@@ -9,8 +9,13 @@ import { PropertyBindingComponent } from './databinding/property-binding.compone
 import { EventBindingComponent } from './databinding/event-binding.component';
 
 @NgModule({
-  declarations: [AppComponent, DatabindingComponent, PropertyBindingComponent, EventBindingComponent],
-  imports: [BrowserModule, FormsModule, HttpModule],
+  declarations: [AppComponent,
+    DatabindingComponent,
+    PropertyBindingComponent,
+    EventBindingComponent],
+  imports: [BrowserModule,
+    FormsModule,
+    HttpModule],
   providers: [],
   bootstrap: [AppComponent]
 })

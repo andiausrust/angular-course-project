@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-event-binding',
   template: `
-   <div></div>
+   <div (click)="onClick()"></div>
   `,
   styles: [`
     div {
@@ -15,5 +15,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent {
 
+  @Output() clicked = new EventEmitter<string>();
 
+  onClick() {
+    this.clicked.emit('neuer text');
+  }
 }

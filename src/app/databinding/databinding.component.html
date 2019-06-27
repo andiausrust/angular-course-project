@@ -13,4 +13,6 @@
 <app-property-binding [name]="'Andi'"></app-property-binding>
 <h4>Event Binding</h4>
 <button (click)="onClick($event)">klick mich</button>
-<app-event-binding></app-event-binding>
+<app-event-binding (clicked)="aString = $event"></app-event-binding>
+<h4>two-way-binding</h4>
+<input type = "text" [(ngModel)]="aString">
