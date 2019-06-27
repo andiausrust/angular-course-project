@@ -1,10 +1,12 @@
+import { DatabindingComponent } from './databinding/databinding.component';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <h1>inline template</h1>
+    <hr />
+    <app-databinding></app-databinding>
+  `
 })
-export class AppComponent {
-  title = 'app works!';
-}
+export class AppComponent {}
